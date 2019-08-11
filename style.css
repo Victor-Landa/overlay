@@ -1,25 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
 :root{
-    --shadowColor: hsla(0, 0%, 0%, 0.08);
+  --shadowColor: hsla(0, 0%, 0%, 0.08);
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
-    background: #f0f3f7;
-    color: rgba(0, 0, 0, .6);
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  background: #f0f3f7;
+  color: rgba(0, 0, 0, .6);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 form{
-    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    width: 400px;
-    margin: 0 auto;
-    padding: 2em 1.5em;
-    background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+  background: white;
+}
+
+label{
+  text-align: center;
+  display: block;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 3px 2px -2px var(--shadowColor);
 }
