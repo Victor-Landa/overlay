@@ -66,4 +66,20 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.overlay.is-active{
+  display: block;
+}
+
+input.is-active{
+  position: relative;
+  z-index: 3;
+}
+
+button{
+  position: relative;
+  z-index: 3;
 }
