@@ -14,3 +14,12 @@ body{
     justify-content: center;
     height: 100vh;
 }
+
+form{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+    background: white;
+}
