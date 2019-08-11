@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Overlay Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="./main.js" type="text/javascript"></script>
 </head>
 <body>
     <form action="">
@@ -16,5 +16,30 @@
         <button type="submit">Enviar</button>
     </form>
     <div class="overlay" id="overlay"></div>
+    <script>
+        // Selector para el input y el overlay.
+
+        // Este es un selector de etiqueta que va a tomar a todos los inputs.
+        const $inputList = document.querySelectorAll('input');
+
+        // Selector de ID
+        const $overlay = document.querySelector('#overlay');
+
+        // A todos los elementos de input les añadimos eventos, el evento al que vamos a acceder cuando entres a un input será "Focus" y cuando nos vayamos se lanzará el evento "Blur".
+
+        // En el inputList tenemos una lista (Array que tenemos que iterar).
+        $inputList.forEach($input => {
+            $input.addEventListener('focus', focus);
+            $input.addEventListener('blur', blur);
+        });
+
+        function focus(event){
+            console.log('focus');
+        }
+
+        function blur(event){
+            console.log('blur');
+        }
+    </script>
 </body>
 </html>
